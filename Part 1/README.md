@@ -1,0 +1,1 @@
+In this video we set up our project and created our CurrencyManager script. Make sure your CurrencyManager script is attached to your GameManager object and that you assign the moneyDisp reference in the inspector.
