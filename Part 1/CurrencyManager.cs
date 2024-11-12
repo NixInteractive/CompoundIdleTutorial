@@ -18,8 +18,8 @@ public class CurrencyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        money++;
-        money *= 1.0001;
+        money++; //To be removed
+        money *= 2; //To be removed
 
         moneyDisp.text = money.ToString();
     }
