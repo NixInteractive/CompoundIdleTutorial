@@ -3,19 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using BreakInfinity;
-using UnityEngine.UI;
 
 public class CurrencyManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI moneyDisp;
-    [SerializeField] private TextMeshProUGUI limiterDisp;
-    [SerializeField] private TextMeshProUGUI limiterPerSecDisp;
 
     public BigDouble money;
-    public BigDouble limiter;
-    public BigDouble limiterPerSec;
-
-    [SerializeField] private Image limiterBar;
 
     // Start is called before the first frame update
     void Start()
@@ -29,22 +22,7 @@ public class CurrencyManager : MonoBehaviour
         money++;
         money *= 1.00001f;
 
-        ProcessLimiter();
-
-        moneyDisp.text = $"Money: {SciNotToUSName(money)}";
-        limiterDisp.text = $"Limiter: {SciNotToUSName(limiter)}";
-        limiterPerSecDisp.text = $"{SciNotToUSName(limiterPerSec)}/s";
-    }
-
-    private void ProcessLimiter()
-    {
-        limiterBar.fillAmount += Time.deltaTime;
-
-        if(limiterBar.fillAmount >= 1)
-        {
-            limiterBar.fillAmount = 0;
-            limiter += limiterPerSec;
-        }
+        moneyDisp.text = SciNotToUSName(money);
     }
 
     public string SciNotToUSName(BigDouble num)
