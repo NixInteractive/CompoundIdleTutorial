@@ -1,0 +1,1 @@
+In this video we created our limiter currency. The limiter currency acts as a way to slow down the progression of the game to prevent a crazy snowball effect. Don't forget to assign your references in the inspector!
