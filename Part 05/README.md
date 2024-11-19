@@ -1,0 +1,1 @@
+In this video we created our first income generator. You don't need to have the same exact setup for the UI but you will need at least the elements we referenced in the code. Don't forget to assign the references in the inspector!
