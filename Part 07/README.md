@@ -1,0 +1,1 @@
+In this video we set up our buy function and the function that calculates how much we will buy based on the amount toggle we set up in the last video. The function for calculating that could probably be cleaned up a bit so we will probably revisit it later on.
