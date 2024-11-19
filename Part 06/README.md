@@ -1,0 +1,1 @@
+In this video we set up a button that toggles between the different quantities of generator that we can buy. The code for the toggle is pretty flexible and should allow you to use whatever percentages you choose.
