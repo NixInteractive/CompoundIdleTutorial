@@ -42,30 +42,6 @@ public class ManagerManager : MonoBehaviour
             newManComponent.managerDescription = availableManagers[m].managerDescription;
             newMan.name = availableManagers[m].managerName;
             activeManagers.Add(newManComponent);
-
-            if(newManComponent.quantity == 0)
-            {
-                newManComponent.gameObject.SetActive(false);
-            }
         }
-    }
-
-    private void RefreshManagers()
-    {
-        foreach(Manager manager in activeManagers)
-        {
-            if(manager.quantity > 0)
-            {
-                manager.gameObject.SetActive(true);
-            }
-        }
-    }
-
-    public void AcquireManager()
-    {
-        int rand = Random.Range(0, activeManagers.Count);
-
-        activeManagers[rand].quantity++;
-        RefreshManagers();
     }
 }
