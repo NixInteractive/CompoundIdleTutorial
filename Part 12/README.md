@@ -1,0 +1,1 @@
+In this video we created a rarity system for our managers. I wasn't originally going to do this since it felt a little too gatcha for me. I think it will help keep our managers a little more balanced though in the long run.
